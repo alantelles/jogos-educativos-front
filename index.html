@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos educativos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="title">
+        <h1>Jogos Educativos</h1>
+    </div>
+    <div class="sub">
+        <h2>Leitura de palavras em velocidade</h2>
+    </div>
+    <div class="content">
+        <div class="config">
+            <p>Tamanho das palavras:</p>
+            <select name="word-size" id="word-size">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <span> letras</span><br>
+            <button type="button" class="btn" id="carregar-palavras">Carregar</button>
+        </div>
+        <div class="game">
+            <div class="box-palavra">
+                <img class="loading-img hide" id="loading-gif" src="loading.gif" alt="">
+                <p id="palavra-exibida"></p>
+            </div>
+            <br>
+            <div class="placar-container">
+                <div class="tipo-placar tipo-placar-acerto">
+                    <button class="btn btn-grande btn-acerto" type="button" id="confirmar-acerto">Acertou</button><br>
+                    <span class="placar" id="acertos">0</span>
+                </div>
+                <div class="tipo-placar tipo-placar-dica">
+                    <button class="btn btn-grande btn-dica" type="button" id="confirmar-dica">Usou dica</button><br>
+                    <span class="placar" id="dicas">0</span>
+                </div>
+                <div class="tipo-placar tipo-placar-erro">
+                    <button class="btn btn-grande btn-erro" type="button" id="confirmar-erro">Errou</button><br>
+                    <span class="placar" id="erros">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
