@@ -57,7 +57,6 @@ async function carregarPalavras() {
         const response = await fetch(getUrlCarregarPalavras(wordSize))
         const wordsObj = await response.json();
         wordList = wordsObj.words;
-        wordList.pop();
         wordList.sort(() => Math.random() - 0.5);
         loadingImg.classList.add('hide');
         mostrarPalavra();
